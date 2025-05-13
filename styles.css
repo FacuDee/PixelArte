@@ -327,22 +327,28 @@ footer span:hover {
     display: block;
   }
 
-  nav.nav-links {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background: white;
-    flex-direction: column;
-    width: 100%;
-    text-align: left;
-    padding: 1rem 2rem;
-    display: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
+nav.nav-links {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  padding: 0 2rem;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-  nav.nav-links.active {
-    display: flex;
-  }
+nav.nav-links.active {
+  max-height: 500px;
+  opacity: 1;
+  padding: 1rem 2rem;
+}
 
   nav.nav-links a {
     margin: 1rem 0;
