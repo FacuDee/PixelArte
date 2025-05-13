@@ -74,7 +74,7 @@ PixelArte/
 
 ## 📸 Capturas
 
-> ![Texto alternativo](./imgs/capturaPixelArte.JPG)
+![Texto alternativo](./imgs/capturaPixelArte.JPG)
 
 ---
 
